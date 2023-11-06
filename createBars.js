@@ -1,4 +1,3 @@
-
 // Create bars array
 let barsArr = [];
 function bars(numOfBars){
@@ -8,11 +7,10 @@ function bars(numOfBars){
       }
 }
 bars(80)
-console.log(barsArr);
 
 // create a div for every array element
+let container = document.querySelector('.visualizer-container');
 function createBars(){
-      let container = document.querySelector('.visualizer-container');
       let barsArrLength = barsArr.length;
 
       for (let i = 0; i < barsArrLength; i++){
@@ -24,4 +22,15 @@ function createBars(){
             container.appendChild(barDiv)
       }
 }
-createBars()
+createBars();
+
+// create randomizng function for button
+function randomizer(){
+      container.innerHTML = '';
+      barsArr = [];
+      bars(80);
+      createBars();
+}
+document.getElementById('randomizer-btn').addEventListener('click', randomizer);
+
+
