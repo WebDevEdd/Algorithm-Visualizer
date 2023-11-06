@@ -1,30 +1,53 @@
 body{
       padding: 0;
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif
+      font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Page Title */
 .page-title{
       width: 100%;
+      background-color: rgb(131, 158, 182);
+      height: 100%;
 }
 .page-title h1{
       text-align: center;
+      margin: 0;
+      padding: 16px;
 }
 
 /* Nav Bar  */
 .nav-bar{
       display: flex;
       justify-content: space-evenly;
+      background-color: rgb(131, 158, 182);
+      height: 80px;
+}
+button{
+      height: fit-content;
 }
 .nav-section{
       width: 100%;
       display: flex;
       justify-content: space-around;
+      align-items: center;
 }
 .speed-slider-container{
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
+}
+
+/* Visualizer */
+.visualizer-container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+}
+.bar{
+      width: 1%;
+      margin-left: 2px;
+      margin-right: 2px;
 }
